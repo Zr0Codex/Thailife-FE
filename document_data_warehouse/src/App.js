@@ -4,6 +4,7 @@ import className  from "classnames";
 
 import styles from "./App.module.css";
 import useMediaQuery from './hooks/useMediaQuery';
+import  Header  from './components/Header/Header';
 
 const App = () =>{
   const isMobile = useMediaQuery(768);
@@ -13,9 +14,11 @@ const App = () =>{
       className={className([
         styles.layout,
         isMobile && styles.mobile,
-        isMobile && styles.tablet,
-      ])}
+        isTablet && styles.tablet,
+      ]), "App"}
     >
+      <Header />
+
     </div>
   );
 };
