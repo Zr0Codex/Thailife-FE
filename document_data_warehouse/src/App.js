@@ -1,25 +1,48 @@
-import logo from './logo.svg';
 import React from 'react';
-import className  from "classnames";
+import "antd/dist/antd.css";
+import { Layout } from 'antd';
+import MainHeader from './components/Header/Header'
+import  Footers  from './components/Footer/Footer';
 
-import styles from "./App.module.css";
-import useMediaQuery from './hooks/useMediaQuery';
-import  Header  from './components/Header/Header';
+
+import LoginPage  from './components/LoginPage/LoginPage.js';
+import styled from 'styled-components';
+
+const { Header, Content, Footer } = Layout;
+
+const MarginContainer = styled.div`
+  margin-top: 60px;
+  padding: 1;
+
+  @media screen and (min-width: 601px) {
+    margin-top: 30px;
+  }
+
+  @media screen and (max-width: 375px) {
+    margin-top: 0px;
+  }
+
+`
 
 const App = () =>{
-  const isMobile = useMediaQuery(768);
-  const isTablet = useMediaQuery(1024);
-  return(
-    <div
-      className={className([
-        styles.layout,
-        isMobile && styles.mobile,
-        isTablet && styles.tablet,
-      ]), "App"}
-    >
-      <Header />
 
-    </div>
+  return(
+    // eslint-disable-next-line
+
+    <Layout breakpoint="lg">
+        <Header>
+          <MainHeader/>
+          
+        </Header>
+        <MarginContainer>
+          <Content>
+            <LoginPage/>
+          </Content>
+        </MarginContainer>
+        {/* <Footer>
+          <Footers />
+        </Footer> */}
+    </Layout>
   );
 };
 

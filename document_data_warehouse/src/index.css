@@ -11,3 +11,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'DBOzoneBold';
+  src: local('DBOzone'), url(./assets/fonts/DBOzoneXBold.ttf) format('opentype');
+}
+
+@font-face {
+  font-family: 'DBOzoneXMed';
+  src: local('DBOzone'), url(./assets/fonts/DBOzoneXMed.ttf) format('opentype');
+}
+
+@font-face {
+  font-family: 'DBOzoneXLi';
+  src: local('DBOzone'), url(./assets/fonts/DBOzoneXLi.ttf) format('opentype');
+}
+
+@font-face {
+  font-family: 'DBOzoneX';
+  src: local('DBOzone'), url(./assets/fonts/DBOzoneX.ttf) format('opentype');
+}
