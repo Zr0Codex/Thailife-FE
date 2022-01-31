@@ -35,7 +35,7 @@ export const LoginContainer = styled.div`
   //box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
   //border-top: 3px solid #41ba90;
   padding: 0;
-
+  border: 1px solid red; // for debug layout
   @media screen and (max-width: 375px) {
     margin:auto;
 	  position:relative;
@@ -54,6 +54,7 @@ export const LoginFromBox = styled.div`
   overflow: hidden;
   margin: 73px 43px 96px 29px;
   border-radius: 2px;
+  border: 1px solid red; // for debug layout
 
   justify-content: center;
   align-items: center;
@@ -71,6 +72,7 @@ export const TryFooter = styled.div`
   // justify-content: right;
   // align-items: right;
   margin-bottom: 10px;
+  border: 1px solid red; // for debug layout
 `
 
 export const LoginForm = styled.div`
@@ -78,6 +80,7 @@ export const LoginForm = styled.div`
   max-width: 480px;
   width: 100%;
   padding: 60px;
+  border: 1px solid red; // for debug layout
   align-item: center;
   // @media screen and (max-width: 601px) {
   //   max-width: 100%;
@@ -86,7 +89,7 @@ export const LoginForm = styled.div`
 
 export const ImageBox = styled.div`
   width: 729px;
-
+  border: 1px solid red; // for debug layout
   @media screen and (max-width: 729px) {
     display: none;
   }
